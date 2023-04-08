@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table {
+            border: solid 1px black;
+            border-collapse: collapse;
+        }
+        td {
+            border:solid 1px black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Title</td>
+            <td>Artist</td>
+            <td>Year</td>
+            <td>Width</td>
+            <td>Height</td>
+            <!--<th colspan="2">Width-Height</th> ikisi bir arada yazma-->
+        </tr>
+        <tr>
+            <td>The Death of Marat</td>
+            <td>Jacques-Louis David</td>
+            <td>1793</td>
+            <td>162Cm</td>
+            <td>128CM</td>
+        </tr>
+        <tr>
+            <td>Burial at Ornans</td>
+            <td>Gustave Courbet</td>
+            <td>1849</td>
+            <td>314Cm</td>
+            <td>663CM</td>
+        </tr>
+    </table>
+
+    <label>Seacrh City:</label>
+    <input type="text" name="city" list="cities" placeholder="Search City"/>
+    <datalist id="cities">
+        <option>Calcutta</option>
+        <option>Calgary</option>
+        <option>London</option>
+        <option>Paris</option>
+        <option>Prague</option>
+
+
+    </datalist>
+</body>
+</html>

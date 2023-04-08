@@ -1,0 +1,59 @@
+.page-top{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+}
+.page-left{
+    background-color: darkorange;
+    padding: 10px;
+    text-align: justify;
+    width:75%;
+    height:400px;
+    float:left;
+}
+.page-right{
+    background-color: darkred;
+    padding: 10px;
+    text-align: justify;
+    width:22.8%;
+    height:400px;
+    float:right;
+}
+body{
+    margin: 0 auto;
+}
+.page-left .content{
+    text-align: justify;
+    padding: 10px;
+}
+.page-left header{
+    color:burlywood;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.page-bottom{
+    background-color:darkturquoise;
+    padding: 15px;
+    height:40px;
+    clear: both;
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.page-right a{
+    color:white;
+    text-decoration: none;
+}
+.page-right a:hover{
+    color:red;
+    text-decoration: none;
+}
+.page-right li{
+    list-style-type: none;
+    padding:7px;
+}
+aside h1{
+    text-align: center;
+}
+.page-top img{
+    float:left;
+}

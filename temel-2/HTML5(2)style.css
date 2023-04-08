@@ -1,0 +1,15 @@
+h2{
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+*{
+    color: darkgoldenrod;
+}
+makale{
+    color: firebrick;
+    background-color: aqua;
+    padding:15px;
+    margin-bottom: 10px;
+    display: block;
+    font-size:20px;
+}

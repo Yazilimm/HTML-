@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./HTML5(11)style.css">
+    <title>HTML5 - 8</title>
+</head>
+<body>
+    <header class="header">    
+        <h1>Html 5 ve Css 3 Egitim Seti </h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <aside class="sidebar">        
+        <details>
+           <summary>Egitim Setlerim</summary> 
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML 5</a></li>
+                <li><a href="#">CSS 3</a></li>
+                <li><a href="#">JavaScript</a></li>
+             </ul>
+        </details>
+        <details>
+            <summary>Pictures</summary>
+            <img src="./images/photo-1550028061-1de667deea35.jpg" width="100" height="auto"  alt="Deneme1">
+            <img src="./images/2-min.png" width="100" height="auto" alt="Deneme1">
+        </details>
+        <details>
+            <summary>Login</summary>
+            <label>Username</label>
+            <p><input type="text" name="username" id="username"></p>
+            <label>Password</label>
+            <p><input type="password" name="password" id="password"></p>
+            <input type="submit" name="login" id="login">
+        </details>
+    </aside>
+    <section class="change">
+        <header>
+            <h2>Youtube  icin cok <mark>emek</mark>  verseydin birvideo hazirlasaydin baskasinin reklam engelleyici kullanmasini nasil karsilardin</h2>
+        </header>
+        <label>Loading...</label>
+        <progress max="100" value="0" id="load"></progress>
+        <h3 id="result"></h3>
+        <dialog open>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, error.</dialog>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam blanditiis possimus,<wbr>vero quibusdam dicta officia voluptas esse optio nesciunt ipsam ut illo at? Esse?</p>
+    </section>
+    <footer class="page-bottom">Enes Deneme</footer>
+    <script>
+        var valueload=0;
+        function progressbar(valueload){
+            var bar=document.getElementById("load");
+            bar.value=valueload;
+            valueload++;
+            var loadTime=setTimeout("progressbar("+valueload+")");
+            if(valueload>100){
+                clearTimeout(loadTime);
+                document.getElementById("result").innerHTML="Yukleme Tamamlandi"
+            }
+        }
+        progressbar(valueload);
+    </script>
+</body>
+</html>
